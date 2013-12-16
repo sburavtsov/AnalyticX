@@ -107,8 +107,10 @@ void AnalyticX::flurrySetReportLocation(bool reportLocation) {
 }
 
 
-
-
+// MAT integration
+void AnalyticX::matTrackAction(const char *event, double revenue, const char *currency) {
+	
+}
 
 
 
