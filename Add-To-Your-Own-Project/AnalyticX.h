@@ -66,6 +66,9 @@ public:
     //iOS + Android
     static void flurryLogEventWithParameters(const char * eventName, cocos2d::CCDictionary * parameters);
 
+
+	static void matTrackAction(const char * event, double revenue, const char * currency);
+
     /* 
      start or end timed events
      */

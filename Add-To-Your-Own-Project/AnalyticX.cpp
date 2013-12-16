@@ -418,7 +418,27 @@ void AnalyticX::flurrySetEventLoggingEnabled(bool value) {
     //iOS only
 }
 
-
+void AnalyticX::matTrackAction(const char * event, double revenue, const char * currency)
+{
+	cocos2d::JniMethodInfo minfo;
+	bool isMethodFound = cocos2d::JniHelper::getStaticMethodInfo(
+		minfo,
+		"com/playstorm/buildanempire/platform_android",
+		"MatWrap",
+		"(Ljava/lang/String;D;Ljava/lang/String;)V"); 
+    
+    if (true == isMethodFound)
+	{
+        jstring stringArg0 = minfo.env->NewStringUTF(event);
+        jstring stringArg2 = minfo.env->NewStringUTF(currency);
+        
+        minfo.env->CallStaticVoidMethod(minfo.classID, minfo.methodID, stringArg0, revenue, stringArg2);
+		
+		minfo.env->DeleteLocalRef(stringArg0);
+		minfo.env->DeleteLocalRef(stringArg2);
+		minfo.env->DeleteLocalRef(minfo.classID);
+    }
+}
 
 
 
