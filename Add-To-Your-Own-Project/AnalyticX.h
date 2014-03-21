@@ -135,6 +135,12 @@ public:
     static void flurrySetSessionReportsOnPauseEnabled(bool setSessionReportsOnPauseEnabled);
     //iOS
     static void flurrySetEventLoggingEnabled(bool value);
+	
+	
+	
+	// Mixpanel integration
+#include "mixpanelIntegration.h"
+	
 };
 
 #endif
