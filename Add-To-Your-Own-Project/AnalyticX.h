@@ -24,6 +24,7 @@ public:
     + (void)setDebugLogEnabled:(BOOL)value;			// generate debug logs for Flurry support, default is NO
     + (void)setSessionContinueSeconds:(int)seconds; // default is 10 seconds
     + (void)setSecureTransportEnabled:(BOOL)value; // set data to be sent over SSL, default is NO
+	+ (void)setCrashReportingEnabled:(BOOL)value;   // enable crash reporting, default is NO
      */
     
     //iOS + Android
