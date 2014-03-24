@@ -27,5 +27,8 @@ void AnalyticX::flurryEndTimedEventWithParameters(char const *,class cocos2d::CC
 void AnalyticX::flurrySetUserID(char const *)
 {}
 
+void AnalyticX::mixpanelIdentify(char const *)
+{}
+
 void AnalyticX::matTrackAction(const char * event, double revenue, const char * currency)
 {}
