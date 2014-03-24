@@ -10,6 +10,10 @@ void AnalyticX::mixpanelSharedInstanceWithToken(const char * token) {
 
 void AnalyticX::mixpanelIdentify(const char * distinctId) {
 	
+	Mixpanel * mp = [Mixpanel sharedInstance];
+	
+	
+	//mp registerSuperProperties:(NSDictionary *)
 }
 
 void AnalyticX::mixpanelTrackEvent(const char *event) {
