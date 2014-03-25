@@ -27,8 +27,13 @@ void AnalyticX::flurryEndTimedEventWithParameters(char const *,class cocos2d::CC
 void AnalyticX::flurrySetUserID(char const *)
 {}
 
-void AnalyticX::mixpanelIdentify(char const *)
-{}
-
 void AnalyticX::matTrackAction(const char * event, double revenue, const char * currency)
 {}
+
+void AnalyticX::mixpanelSharedInstanceWithToken(const char * token) {}
+void AnalyticX::mixpanelIdentify(const char * distinctId) {}
+void AnalyticX::mixpanelTrackEvent(const char *event) {}
+void AnalyticX::mixpanelTrackEventWithProperties(const char *event, cocos2d::CCDictionary * properties) {}
+void AnalyticX::mixpanelRegisterSuperProperties(cocos2d::CCDictionary * superProperties) {}
+void AnalyticX::mixpanelReset() {}
+void AnalyticX::mixpanelFlush() {}
