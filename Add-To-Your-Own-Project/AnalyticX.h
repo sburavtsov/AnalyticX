@@ -10,6 +10,7 @@
 #define AnalyticX_AnalyticX_h
 
 #include "cocos2d.h"
+#include "AnalyticXDefines.h"
 
 class AnalyticX {
     
@@ -141,6 +142,10 @@ public:
 	// Mixpanel integration
 #include "mixpanelIntegration.h"
 	
+	// general functions
+	static const char * getCountryCode();
+	static const char * getCurrentDateWithFormat(const char *dateStringFormat);
+	static const char * generateUniqueUserID();
 };
 
 #endif
