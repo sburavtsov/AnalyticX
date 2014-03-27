@@ -26,6 +26,8 @@ void AnalyticX::mixpanelTrackEvent(const char *event) {
 
 void AnalyticX::mixpanelTrackEventWithProperties(const char *event, cocos2d::CCDictionary * properties) {
 	
+	[[Mixpanel sharedInstance] track:[AnalyticXStringUtil nsstringFromCString:event]
+						  properties:[AnalyticXStringUtil nsDictionaryFromCCDictionary:properties]];
 }
 
 void AnalyticX::mixpanelRegisterSuperProperties(cocos2d::CCDictionary * superProperties) {

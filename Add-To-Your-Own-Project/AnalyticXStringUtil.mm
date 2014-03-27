@@ -37,14 +37,9 @@
         return NULL;
     }
     
-    cocos2d::CCLog("1");
-    
     NSMutableDictionary *nsDict = [NSMutableDictionary dictionaryWithCapacity:ccDictionary->allKeys()->count()];
     
-    cocos2d::CCLog("2");
-
     for (int i = 0; i < ccDictionary->allKeys()->count(); i++) {
-        cocos2d::CCLog("3");
         
         cocos2d::CCObject* obj = ccDictionary->objectForKey(((cocos2d::CCString *)ccDictionary->allKeys()->objectAtIndex(i))->getCString());
         NSObject* nsObject;
@@ -65,6 +60,10 @@
         {
             nsObject = [NSString stringWithFormat:@"%d", ((cocos2d::CCInteger*)obj)->getValue()];
         }
+		else if (isKindOfClass(obj, cocos2d::CCFloat)) {
+			
+            nsObject = [NSString stringWithFormat:@"%0.2f", ((cocos2d::CCFloat*)obj)->getValue()];
+		}
         else
         {
             nsObject = @"Unknown Object";
