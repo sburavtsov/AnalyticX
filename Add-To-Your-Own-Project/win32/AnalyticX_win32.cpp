@@ -33,7 +33,6 @@ void AnalyticX::matTrackAction(const char * event, double revenue, const char * 
 void AnalyticX::mixpanelSharedInstanceWithToken(const char * token) {}
 void AnalyticX::mixpanelIdentify(const char * distinctId) {}
 void AnalyticX::mixpanelTrackEvent(const char *event) {}
-void AnalyticX::mixpanelTrackEventWithProperties(const char *event, cocos2d::CCDictionary * properties) {}
 void AnalyticX::mixpanelRegisterSuperProperties(cocos2d::CCDictionary * superProperties) {}
 void AnalyticX::mixpanelCreateAliasForDistinctID(const char *alias, const char *distinctID) {}
 const char * AnalyticX::getCountryCode() {return "";}
