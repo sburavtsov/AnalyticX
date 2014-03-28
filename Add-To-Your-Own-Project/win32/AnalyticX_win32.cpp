@@ -35,9 +35,7 @@ void AnalyticX::mixpanelIdentify(const char * distinctId) {}
 void AnalyticX::mixpanelTrackEvent(const char *event) {}
 void AnalyticX::mixpanelTrackEventWithProperties(const char *event, cocos2d::CCDictionary * properties) {}
 void AnalyticX::mixpanelRegisterSuperProperties(cocos2d::CCDictionary * superProperties) {}
-void AnalyticX::mixpanelReset() {}
-void AnalyticX::mixpanelFlush() {}
 void AnalyticX::mixpanelCreateAliasForDistinctID(const char *alias, const char *distinctID) {}
 const char * AnalyticX::getCountryCode() {return "";}
 const char * AnalyticX::getCurrentDateWithFormat(const char *dateStringFormat) {return "";}
-const char * AnalyticX::generateUniqueUserID() {return "";}
+const char * AnalyticX::mixpanelGetDistinctID(void) {return "";}
