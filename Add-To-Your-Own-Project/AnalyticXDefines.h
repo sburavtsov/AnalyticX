@@ -5,5 +5,6 @@
 #define AX_COUNTRY_CODE		"AnalyticX:countryCode"
 #define AX_REGISTRATION_DATE	"AnalyticX:regDateDDMMYYY"
 #define AX_UNIQUE_USER_ID		"AnalyticX::uniqueUserID"
+#define AX_FIRST_TRANSACTION	"AnalyticX:firstTransaction"
 
 #endif

@@ -16,13 +16,3 @@ const char * AnalyticX::getCurrentDateWithFormat(const char *dateStringFormat) {
 	NSString *formattedDateString = [dateFormatter stringFromDate:date];
 	return [AnalyticXStringUtil cstringFromNSString:formattedDateString];
 }
-
-const char * AnalyticX::generateUniqueUserID() {
-	
-	CFUUIDRef uuidRef = CFUUIDCreate(NULL);
-	CFStringRef uuidStringRef = CFUUIDCreateString(NULL, uuidRef);
-	CFRelease(uuidRef);
-	NSString *ident = [NSString stringWithString:(NSString *)uuidStringRef];
-	CFRelease(uuidStringRef);
-	return [AnalyticXStringUtil cstringFromNSString:ident];
-}
