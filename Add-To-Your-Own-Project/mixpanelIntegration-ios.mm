@@ -8,6 +8,11 @@ void AnalyticX::mixpanelSharedInstanceWithToken(const char * token) {
     [Mixpanel sharedInstanceWithToken: tokenString];
 }
 
+const char *AnalyticX::mixpanelGetDistinctID() {
+
+	return [AnalyticXStringUtil cstringFromNSString:[Mixpanel sharedInstance].distinctId];
+}
+
 void AnalyticX::mixpanelIdentify(const char * distinctId) {
 	
 	[[Mixpanel sharedInstance] identify:[AnalyticXStringUtil nsstringFromCString:distinctId]];
@@ -33,10 +38,6 @@ void AnalyticX::mixpanelTrackEventWithProperties(const char *event, cocos2d::CCD
 void AnalyticX::mixpanelRegisterSuperProperties(cocos2d::CCDictionary * superProperties) {
 	
 	[[Mixpanel sharedInstance] registerSuperProperties:[AnalyticXStringUtil nsDictionaryFromCCDictionary:superProperties]];
-}
-
-void AnalyticX::mixpanelReset() {
-	
 }
 
 void AnalyticX::mixpanelFlush() {
