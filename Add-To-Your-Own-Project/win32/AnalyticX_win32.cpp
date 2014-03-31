@@ -32,9 +32,4 @@ void AnalyticX::matTrackAction(const char * event, double revenue, const char * 
 
 void AnalyticX::mixpanelSharedInstanceWithToken(const char * token) {}
 void AnalyticX::mixpanelIdentify(const char * distinctId) {}
-void AnalyticX::mixpanelTrackEvent(const char *event) {}
-void AnalyticX::mixpanelRegisterSuperProperties(cocos2d::CCDictionary * superProperties) {}
-void AnalyticX::mixpanelCreateAliasForDistinctID(const char *alias, const char *distinctID) {}
-const char * AnalyticX::getCountryCode() {return "";}
 const char * AnalyticX::getCurrentDateWithFormat(const char *dateStringFormat) {return "";}
-const char * AnalyticX::mixpanelGetDistinctID(void) {return "";}
