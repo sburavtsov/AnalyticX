@@ -143,7 +143,6 @@ public:
 #include "mixpanelIntegration.h"
 	
 	// general functions
-	static const char * getCountryCode();
 	static const char * getCurrentDateWithFormat(const char *dateStringFormat);
 };
 
