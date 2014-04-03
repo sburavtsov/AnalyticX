@@ -137,7 +137,8 @@ public:
     //iOS
     static void flurrySetEventLoggingEnabled(bool value);
 	
-	
+
+	static void OnRegister(const char * userID);
 	
 	// Mixpanel integration
 #include "mixpanelIntegration.h"
