@@ -112,7 +112,9 @@ void AnalyticX::matTrackAction(const char *event, double revenue, const char *cu
 	
 }
 
-
+void AnalyticX::OnRegister(const char *userID) {
+	
+}
 
 
 
