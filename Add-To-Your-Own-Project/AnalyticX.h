@@ -142,6 +142,9 @@ public:
 	// Mixpanel integration
 #include "mixpanelIntegration.h"
 	
+	// AppsFlyer
+#include "appsFlyerIntegration.h"
+	
 	// general functions
 	static const char * getCurrentDateWithFormat(const char *dateStringFormat);
 };
