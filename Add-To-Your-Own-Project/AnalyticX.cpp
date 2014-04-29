@@ -13,6 +13,7 @@
 #include <android/log.h>
 #include "AnalyticXStringUtilAndroid.h"
 #include <string>
+#include "gameSpecific.h"
 
 using namespace std;
 
@@ -423,7 +424,7 @@ void AnalyticX::matTrackAction(const char * event, double revenue, const char * 
 	cocos2d::JniMethodInfo minfo;
 	bool isMethodFound = cocos2d::JniHelper::getStaticMethodInfo(
 		minfo,
-		"com/playstorm/buildanempire/platform_android",
+		JAVA_PACKAGE_CLASS,
 		"MatWrap",
 		"(Ljava/lang/String;D;Ljava/lang/String;)V"); 
     
