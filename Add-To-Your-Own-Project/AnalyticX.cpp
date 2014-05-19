@@ -419,6 +419,10 @@ void AnalyticX::flurrySetEventLoggingEnabled(bool value) {
     //iOS only
 }
 
+void AnalyticX::mixpanelTrackCharge(double amount, cocos2d::CCDictionary *properties) {
+	//iOS only
+}
+
 void AnalyticX::matTrackAction(const char * event, double revenue, const char * currency)
 {
 	cocos2d::JniMethodInfo minfo;

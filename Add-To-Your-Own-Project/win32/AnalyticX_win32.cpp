@@ -32,4 +32,5 @@ void AnalyticX::matTrackAction(const char * event, double revenue, const char * 
 
 void AnalyticX::mixpanelSharedInstanceWithToken(const char * token) {}
 void AnalyticX::mixpanelIdentify(const char * distinctId) {}
+void AnalyticX::mixpanelTrackCharge(double amount, cocos2d::CCDictionary *properties){}
 const char * AnalyticX::getCurrentDateWithFormat(const char *dateStringFormat) {return "";}
