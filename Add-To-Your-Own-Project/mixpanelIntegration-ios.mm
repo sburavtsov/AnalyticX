@@ -42,4 +42,12 @@ void AnalyticX::mixpanelRegisterSuperProperties(cocos2d::CCDictionary * superPro
 
 void AnalyticX::mixpanelFlush() {
 	
+	[[Mixpanel sharedInstance] flush];
+}
+
+void AnalyticX::mixpanelTrackCharge(double amount, cocos2d::CCDictionary * properties) {
+	
+	[[Mixpanel sharedInstance] identify:[Mixpanel sharedInstance].distinctId];
+	[[[Mixpanel sharedInstance] people] trackCharge:[NSNumber numberWithDouble:amount]
+									 withProperties:[AnalyticXStringUtil nsDictionaryFromCCDictionary:properties]];
 }

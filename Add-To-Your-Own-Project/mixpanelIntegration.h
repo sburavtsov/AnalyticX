@@ -14,3 +14,4 @@ static void mixpanelTrackEvent(const char *event);
 static void mixpanelTrackEventWithProperties(const char *event, cocos2d::CCDictionary * properties);
 static void mixpanelRegisterSuperProperties(cocos2d::CCDictionary * superProperties);
 static void mixpanelFlush();
+static void mixpanelTrackCharge(double amount, cocos2d::CCDictionary *properties);
