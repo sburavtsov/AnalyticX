@@ -11,3 +11,4 @@ static void appsFlyerSetCustomerUserID(const char *customerUserID);
 static void appsFlyerTrackAppLaunch();
 static void appsFlyerSetCurrencyCode(const char *currencyCode);
 static void appsFlyerTrackEventWithValue(const char *eventName, const char *eventValue);
+static void appsFlyerTrackAppLaunch();
