@@ -13,11 +13,12 @@ void AnalyticX::appsFlyerSetCustomerUserID(const char *customerUserID) {
 	[AppsFlyerTracker sharedTracker].customerUserID = [AnalyticXStringUtil nsstringFromCString:customerUserID];
 }
 
+/*
 void AnalyticX::appsFlyerTrackAppLaunch() {
 
 	[[AppsFlyerTracker sharedTracker] trackAppLaunch];
 }
-
+*/
 void AnalyticX::appsFlyerSetCurrencyCode(const char *currencyCode) {
 	
 	[AppsFlyerTracker sharedTracker].currencyCode = [AnalyticXStringUtil nsstringFromCString:currencyCode];
